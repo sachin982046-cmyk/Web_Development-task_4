@@ -1,8 +1,8 @@
-Responsive Website README
+# Responsive Website README
 
 This project updates an existing desktop-only webpage to be mobile-friendly using CSS media queries.
 
-Features
+# Features
 
 Responsive layout using a @media (max-width: 768px) breakpoint.
 
@@ -14,7 +14,7 @@ Columns convert to a single-column layout.
 
 Overflow and horizontal scrolling issues fixed.
 
-How to Use
+# How to Use
 
 1. Add the included CSS file to your project.
 
@@ -28,7 +28,7 @@ How to Use
 
 
 
-Notes
+# Notes
 
 Adjust breakpoints or styles as needed for your specific design.
 
