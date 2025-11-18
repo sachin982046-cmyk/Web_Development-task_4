@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>To-Do List App — Enhanced</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="topbar">
+      <h1 class="title">To-Do List</h1>
+
+      <div class="top-controls">
+        <label class="dark-toggle">
+          <input type="checkbox" id="darkModeToggle" />
+          <span class="toggle-track" aria-hidden="true"></span>
+          <span class="sr-only">Toggle dark mode</span>
+        </label>
+      </div>
+    </header>
+
+    <section class="controls">
+      <div class="input-row">
+        <input id="taskInput" type="text" placeholder="Add a new task..." aria-label="New task" />
+        <button id="addBtn" class="primary">Add</button>
+      </div>
+
+      <div class="filters" role="tablist" aria-label="Task filters">
+        <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="pending" role="tab" aria-selected="false">Pending</button>
+        <button class="filter-btn" data-filter="completed" role="tab" aria-selected="false">Completed</button>
+      </div>
+    </section>
+
+    <main>
+      <ul id="taskList" class="task-list" aria-live="polite"></ul>
+    </main>
+
+    <!-- Delete confirmation modal -->
+    <div id="confirmModal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal-panel" role="document">
+        <h2 id="modalTitle">Confirm delete</h2>
+        <p>Are you sure you want to delete this task?</p>
+        <div class="modal-actions">
+          <button id="cancelDelete" class="btn">Cancel</button>
+          <button id="confirmDelete" class="btn danger">Delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
